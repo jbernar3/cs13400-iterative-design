@@ -1,14 +1,44 @@
-#cs1300-gallery {
-  background-color: lightblue;
+#maincontent {
+  display: flex;
+  /* align-items: stretch-center; */
+  flex-flow: row wrap; 
+  /* justify-content: space-around; */
+  padding-top: 2.5%;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 2.5%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* Uncomment below if images are way too big.
-Selects all image tags and makes them 500px;
- */
-/*img {*/
-/*  width: 500px;*/
-/*}*/
+img{
+  width: 75%;
+}
 
-.gallery-container {
-  /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+.img-single{
+  display: flex;
+  float: top;
+  flex-direction: column;
+  justify-content: space-around;
+  /* height: 700px; */
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.column-two {
+  float: left;
+  width: 50%;
+  /* padding: 30px; */
+}
+
+.userTestWrapper {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.userTest{
+  margin: .6vmax;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
